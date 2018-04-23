@@ -8,4 +8,3 @@ def f(x):
 x0 = [1.,0.8]
 res = minimize(f, x0, method='Nelder-Mead')
 print(res.x)
-print(res)
