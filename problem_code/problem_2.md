@@ -25,4 +25,4 @@ def beale(x):
 
 ネットで調べたところ, Beale関数は(3.0,0.5)で最小値を得るらしい.
 
-[サンプル](problem_2.py)
+[サンプル](code_example/problem_2.py)
