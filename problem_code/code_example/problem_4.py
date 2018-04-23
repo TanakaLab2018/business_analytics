@@ -1,6 +1,6 @@
 from scipy.optimize import minimize
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt #プロットのためにimportしているだけなので必要なし
 
 #dataの中に[x座標, y座標, 人数]の順で情報を入力
 data = np.array([    [24, 54, 2],
