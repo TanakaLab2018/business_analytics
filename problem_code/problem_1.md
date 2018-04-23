@@ -8,4 +8,4 @@ Rosenbrock関数の最小化を初期値を変えて行え. 実は, Rosenbrock�
 ## 解
 Rosenbrock関数は複数の変数からなる関数である. なので最小値を求める際は**scipy.optimize.minimize**を使えばよい.
 
-実はこの問題は[6.1](../6/6_1.py)
+実はこの問題は[6.1](../sample_code/6/6_1.py)
