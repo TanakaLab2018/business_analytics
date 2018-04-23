@@ -19,6 +19,6 @@ def dist(x):
 
 [サンプル1](code_example/problem_5.py)
 
-また, 頑張って二行で書いてもみた.
+また, 頑張って二行でも書いてみた.
 
 [サンプル2](code_example/problem_5_.py)
