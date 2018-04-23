@@ -19,7 +19,7 @@ def sub(x):
 
 con = {'type':'ineq', 'fun':sub}
 
-res1 = minimize(f, (0,0), method='Nelder-Mead')
+res1 = minimize(f, (0,0), method='SLSQP')
 res2 = minimize(f, (0,0), method='SLSQP', constraints=con)
 
 print(res1.x)
