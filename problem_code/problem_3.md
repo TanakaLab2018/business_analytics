@@ -10,4 +10,4 @@
 
 Powell関数を作成して**scipy.optimize.minimize**に投げてあげればよい.
 
-[ここのサイト](https://www.sfu.ca/~ssurjano/powell.html)によると, 最小値をとるのは(0,0,0,0)であるそう.
+[ここのサイト](https://www.sfu.ca/~ssurjano/powell.html)によると, 最小値をとるのは<img src="https://latex.codecogs.com/gif.latex?fx_0=(0.,0.,0.,0.)" />であるそう.
