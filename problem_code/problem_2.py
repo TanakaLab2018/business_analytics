@@ -8,3 +8,6 @@ def beale(x):
 x0 = [1.,0.8]
 res = minimize(beale, x0, method='Nelder-Mead')
 print(res.x)
+
+res = minimize(beale, x0, method='Powell')
+print(res.x)
