@@ -11,7 +11,7 @@ def f(x):
     return x**2+10.
 
 def dist(x):
-    x_o, y_o = 10., 0.
+    x_o, y_o = 10., 0 #カメラマンの位置座標
     return np.sqrt((x-x_o)**2+(f(x)-y_o)**2)
 ```
 
