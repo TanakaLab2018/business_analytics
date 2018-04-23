@@ -1,20 +1,24 @@
 from scipy.optimize import minimize
+import numpy as np
 
-print(minimize(lambda x: ((10-x)**2 + (0-x**2-10)**2), 0., method='SLSQP').x)
+def f(x):
+    return x**2+10.
 
+def dist(x):
+    x_o, y_o = 10., 0.
+    return np.sqrt((x-x_o)**2+(f(x)-y_o)**2)
+
+sol = minimize(dist, 0., method='Nelder-Mead')
+print(sol.x)
 
 #以下, プロットのためのコマンド
 import matplotlib.pyplot as plt
-import numpy as np
 
-x = np.linspace(0, 10, 100)
-def f(x):
-    return x**2+10.
-sol = minimize(lambda x: ((10-x)**2 + (0-x**2-10)**2), 0., method='SLSQP').x
+x = np.linspace(0.,10, 100)
 plt.xlim(0,12.5)
 plt.ylim(0,12.5)
 plt.plot(x, f(x))
 plt.plot(10,0,marker='o')
-plt.plot(sol, f(sol), marker='o')
-plt.plot([10,sol],[0,f(sol)], linestyle='--')
+plt.plot(sol.x, f(sol.x), marker='o')
+plt.plot([10,sol.x],[0,f(sol.x)], linestyle='--')
 plt.show()
