@@ -9,7 +9,7 @@ def dist(x):
     return np.sqrt((x-x_o)**2+(f(x)-y_o)**2)
 
 sol = minimize(dist, 0., method='Nelder-Mead')
-print(sol.x)
+print(sol.x, f(sol.x))
 
 #以下, プロットのためのコマンド
 import matplotlib.pyplot as plt
