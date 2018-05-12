@@ -26,5 +26,6 @@ plt.xlabel('data')
 plt.ylabel('target')
 plt.title('Support Vector Regression')
 plt.legend(loc='upper center', bbox_to_anchor=(1.4,0.7))
-
 plt.show()
+
+print('R^2(pred)-rbf:%f'%)
