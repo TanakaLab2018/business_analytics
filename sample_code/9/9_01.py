@@ -4,8 +4,6 @@ from sklearn.datasets import *
 import matplotlib.pyplot as plt
 import sklearn.svm as svm
 
-print("Hello scikit-learn")
-
 np.random.seed(0)
 X, Y = make_classification(n_features=2, n_redundant=0, n_informative=2)
 iy = (Y==1)
