@@ -2,10 +2,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sklearn.svm as svm
 
-np.random.seed(1000)
+np.random.seed(100)
 n = 50
 x = np.sort(np.random.uniform(-np.pi,np.pi,n))
-y = np.sin(x) + np.random.randn(n)*0.2
+y = np.sin(x) + np.random.randn(n)*0.3
 
 svr_rbf = svm.SVR(kernel='rbf', C=1000, gamma=0.1)
 svr_lin = svm.SVR(kernel='linear', C=1000)
@@ -27,5 +27,3 @@ plt.ylabel('target')
 plt.title('Support Vector Regression')
 plt.legend(loc='upper center', bbox_to_anchor=(1.4,0.7))
 plt.show()
-
-print('R^2(pred)-rbf:%f'%)

@@ -20,7 +20,7 @@ xx, yy = np.meshgrid(np.linspace(-3, 3, 500), np.linspace(-3, 3, 500))
 Z = clf.decision_function(np.c_[xx.ravel(), yy.ravel()])    #ravelのあとに()が必要
 Z = Z.reshape(xx.shape)
 
-ctr = plt.contour(xx, yy, z, levels=[0], linetypes='--')
+ctr = plt.contour(xx, yy, Z, levels=[0], linetypes='--')
 plt.scatter(X[iy, 0], X[iy, 1], marker='o')
 plt.scatter(X[iny, 0], X[iny, 1], marker='x')
 plt.axis([xx.min(), xx.max(), yy.min(), yy.max()])
